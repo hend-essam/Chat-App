@@ -1,16 +1,18 @@
 import Navbar from "../components/layout/Navbar";
 import { Stack, Button, Typography, Box } from "@mui/material";
+import Link from "next/link";
 import Image from "next/image";
-import Link from "next/link"; // Added for better navigation
 
 const Home = () => {
   return (
-    <Box component="main" sx={{ minHeight: "80vh", backgroundColor: "black" }}>
+    <Box component="main">
       <Stack
         direction="column"
-        gap={{ xs: "65px", md: "90px" }}
+        gap="65px"
         py="24px"
+        bgcolor="black"
         px={{ xs: "24px", md: "64px" }}
+        sx={{ minHeight: "75vh" }}
       >
         <Navbar />
 
@@ -83,6 +85,28 @@ const Home = () => {
               />
             </Box>
           </Box>
+        </Stack>
+      </Stack>
+
+      <Stack bgcolor="#b89f6a" p="40px" gap="15px">
+        <Typography variant="h6" sx={{ textAlign: "center" }}>
+          Experience the power of instant messaging with chatify.
+        </Typography>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          gap="6px"
+        >
+          <Image
+            src="/assets/girl.png"
+            width={50}
+            height={50}
+            alt="Hend Essam"
+          />
+          <Typography variant="subtitle1" component="cite">
+            Hend Essam
+          </Typography>
         </Stack>
       </Stack>
     </Box>
