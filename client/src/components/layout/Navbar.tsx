@@ -8,6 +8,7 @@ const Navbar = () => {
       alignItems="center"
       justifyContent="space-between"
       sx={{ color: "#fff" }}
+      component="nav"
     >
       <Link href="/" passHref style={{ textDecoration: "none" }}>
         <Typography

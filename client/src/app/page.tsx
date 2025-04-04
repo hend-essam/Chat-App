@@ -2,6 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import { Stack, Button, Typography, Box } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
+import Footer from "../components/layout/Footer";
 
 const Home = () => {
   return (
@@ -9,8 +10,8 @@ const Home = () => {
       <Stack
         direction="column"
         gap="65px"
-        py="24px"
         bgcolor="black"
+        py="24px"
         px={{ xs: "24px", md: "64px" }}
         sx={{ minHeight: "75vh" }}
       >
@@ -109,6 +110,8 @@ const Home = () => {
           </Typography>
         </Stack>
       </Stack>
+
+      <Footer />
     </Box>
   );
 };
