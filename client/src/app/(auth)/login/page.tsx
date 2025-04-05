@@ -11,7 +11,15 @@ const Login = () => {
           borderBottom={"3px double #b89f6a"}
           p={1}
         >
-          <Typography variant="h3" color="#b89f6a">
+          <Typography
+            variant="h3"
+            color="#b89f6a"
+            component="a"
+            href="/"
+            sx={{
+              textDecoration: "none",
+            }}
+          >
             Chatify
           </Typography>
           <Typography variant="h5">Login</Typography>
