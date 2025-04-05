@@ -3,12 +3,18 @@ import { Stack, Typography, Link, Button, OutlinedInput } from "@mui/material";
 const Login = () => {
   return (
     <Stack height="100vh" alignItems="center" justifyContent="center">
-      <Stack gap={5} p={5} borderRadius={5} boxShadow="0 0 20px 0px #b89f6a">
-        <Stack direction="row" alignItems="center" gap={2}>
-          <Typography variant="h2" color="#b89f6a">
+      <Stack gap={5} p={2}>
+        <Stack
+          direction="row"
+          alignItems="center"
+          gap={2}
+          borderBottom={"3px double #b89f6a"}
+          p={1}
+        >
+          <Typography variant="h3" color="#b89f6a">
             Chatify
           </Typography>
-          <Typography variant="h4">Login</Typography>
+          <Typography variant="h5">Login</Typography>
         </Stack>
 
         <Stack component="form" gap={3}>
